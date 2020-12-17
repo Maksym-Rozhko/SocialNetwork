@@ -5,12 +5,18 @@
 body {
     font-family: sans-serif;
     background-color: #e5e5e5;
+    padding-top: 46px;
 }
 
 .header {
     padding-top: 6px;
     padding-bottom: 6px;
     background-color: #0050B3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
 }
 
 .header-block {
@@ -19,6 +25,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.mob-menu {
+    border: none;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.m-line {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transition-duration: .5s;
 }
 
 .search-input {
@@ -120,10 +145,11 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .menu-sidebar {
-    max-width: 192px;
+    width: 192px;
     margin-top: 18px;
     margin-right: 18px;
 }
@@ -388,6 +414,7 @@ body {
 }
 
 .post-image {
+    width: 100%;
     border-radius: 4px;
     border: 1px solid #bfbfbf;
 }
@@ -418,6 +445,8 @@ body {
     border: none;
     display: flex;
     align-items: center;
+    cursor: pointer;
+    outline: none;
 }
 
 .post-btn .icon {
@@ -429,4 +458,288 @@ body {
     width: 100%;
     border-top: 1px solid #e8e8e8;
     margin-bottom: 16px;
+}
+
+.right-sidebar {
+    width: 384px;
+}
+
+.stories {
+    background: #fff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 18px;
+    padding: 16px;
+    padding-left: 24px;
+    margin-left: 24px;
+}
+
+.stories-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.stories-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.stories-buttons {
+    display: flex;
+}
+
+.stories-button-link {
+    display: flex;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 22px;
+    color: #0050B3;
+    position: relative;
+}
+
+.stories-button-link:first-child::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #bfbfbf;
+    border-radius: 50%;
+    margin-right: 4px;
+    margin-left: 8px;
+    transform: translateY(8px);
+}
+
+.stories-btn-text {
+    margin-left: 4px;
+}
+
+.story-item-add,
+.story-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+.story-item:last-child {
+    margin-bottom: 0;
+}
+
+.story-image {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    flex-shrink: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #1890FF;
+    margin-right: 12px;
+}
+
+.story-title {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #0050b3;
+    width: 100%;
+}
+
+.story-text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #8C8C8C;
+}
+
+.user-avatar {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+}
+
+.stories .see-more {
+    color: #0050B3;
+}
+
+.story-gift .story-item-add {
+    margin-bottom: 0;
+}
+
+.story-gift .story-item-text {
+    display: flex;
+    margin-left: 8px;
+}
+
+.story-gift .story-title {
+    margin-bottom: 4px;
+}
+
+.your-page-item {
+    flex-wrap: wrap;
+}
+
+.your-page .stories-header {
+    align-items: center;
+}
+
+.your-page .btn-dots {
+    background-color: transparent;
+}
+
+.your-page .user-avatar {
+    align-self: flex-start;
+}
+
+.your-page .story-item-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.your-page .icon {
+    width: 16px;
+    height: 16px;
+}
+
+.your-page-item::before {
+    content: "";
+    width: 100%;
+    border-top: 1px solid #e8e8e8;
+    margin-bottom: 16px;
+}
+
+.your-page-item::after {
+    content: "";
+    width: 100%;
+    border-top: 1px solid #e8e8e8;
+    margin-top: 16px;
+}
+
+.your-page-btns {
+    display: flex;
+}
+
+.your-page-btns .post-btn {
+    justify-content: center;
+    border: 1px solid #D9D9D9;
+    max-width: 118px;
+    width: 100%;
+}
+
+.your-page-btns .post-btn:nth-child(2) {
+    border-left: none;
+    border-right: none;
+}
+
+.your-page-btns .post-btn:first-child {
+    border: 1px solid #1890FF;
+}
+
+.your-page-btns .post-footer-text {
+    line-height: 35px;
+    margin-left: 0;
+}
+
+.your-page-btns .post-footer-text.active-btn {
+    color: #1890FF;
+}
+
+.your-page-stats {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.total-counter {
+    font-size: 24px;
+    line-height: 32px;
+    color: #262626;
+    margin-bottom: 4px;
+}
+
+.week-counter {
+    font-size: 14px;
+    line-height: 22px;
+    color: #8C8C8C;
+}
+
+@media (max-width: 1250px) {
+    .header-block {
+        width: 95%;
+    }
+    
+    .container {
+        justify-content: flex-start;
+        width: 95%;
+    }
+    
+    .right-sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .header .nav-user,
+    .nav-panel {
+        display: none;
+    }
+}
+
+@media (max-width: 840px) {
+    .menu-sidebar {
+        position: fixed;
+        top: 25px;
+        left: 0;
+        width: 100%;
+        max-width: 250px;
+        background-color: #f1f1f1;
+        padding-top: 12px;
+        padding-left: 2%;
+        height: 100%;
+        transform: translateX(-100%);
+        transition-duration: .5s;
+    }
+
+    .menu-sidebar.active-menu  {
+        transform: translateX(0);
+    }
+
+    .mob-menu {
+        display: flex;
+        outline: none;
+    }
+
+    .m-line.active {
+        position: relative;
+    }
+
+    .m-line:first-child.active {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+    .m-line:nth-child(2).active {
+        transform: rotate(-45deg);
+        top: -8px;
+    }
+    .m-line:last-child.active {
+        display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    .search {
+        display: none;
+    }
 }

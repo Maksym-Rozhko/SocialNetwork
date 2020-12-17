@@ -13,6 +13,11 @@
 <body>
     <header class="header">
         <div class="header-block">
+            <button class="mob-menu">
+                <span class="m-line"></span>
+                <span class="m-line"></span>
+                <span class="m-line"></span>
+            </button>
             <div class="search">
                 <input type="text" class="search-input" placeholder="Search...">
             </div>
@@ -273,8 +278,212 @@
                     </button>
                 </div>
             </div>
+            <div class="post">
+                <div class="post-header">
+                    <div class="user">
+                        <img src="./images/avatar.png" alt="avatar" class="user-avatar" />
+                        <div class="post-info">
+                            <a href="#" class="post-author">
+                                Mateusz Wierzbicki
+                            </a>
+                            <span class="post-time">
+                                3 hrs
+                            </span>
+                            <svg class="icon">
+                                <use xlink:href="./images/icons-sprite.svg#setting"></use>
+                            </svg>
+                        </div>
+                        <button class="tag btn-dots">
+                            <span class="dots-box"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p class="post-text">
+                        Did you know that all of this was made using only 
+                        components and styles from Ant Desing System for Figma?
+                        Learn more: 
+                        <a href="#">https://Here_can_be_your_ad</a>
+                    </p>
+                    <img class="post-image" src="images/post-image.jpg" alt="post-image" />
+                </div>
+                <div class="likes">
+                    <svg class="icon">
+                        <use xlink:href="./images/icons-sprite.svg#like-active"></use>
+                    </svg>
+                    <span class="like-counter">23</span>
+                </div>
+                <div class="post-footer">
+                    <button class="post-btn">
+                        <svg class="icon">
+                            <use xlink:href="./images/icons-sprite.svg#likes"></use>
+                        </svg>
+                        <span class="post-footer-text">
+                            Like
+                        </span>
+                    </button>
+                    <button class="post-btn">
+                        <svg class="icon">
+                            <use xlink:href="./images/icons-sprite.svg#chat"></use>
+                        </svg>
+                        <span class="post-footer-text">
+                            Comment
+                        </span>
+                    </button>
+                    <button class="post-btn">
+                        <svg class="icon">
+                            <use xlink:href="./images/icons-sprite.svg#share"></use>
+                        </svg>
+                        <span class="post-footer-text">
+                            Share
+                        </span>
+                    </button>
+                </div>
+            </div>
         </div>
         <!-- /.menu-feed -->
+        <div class="right-sidebar">
+            <div class="stories">
+                <div class="stories-header">
+                    <h4 class="stories-title">
+                        Stories
+                    </h4>
+                    <div class="stories-buttons">
+                        <a href="#" class="stories-button-link">
+                            <svg class="icon">
+                                <use xlink:href="./images/icons-sprite.svg#clock-circle"></use>
+                            </svg>
+                            <span class="stories-btn-text">
+                                Archive
+                            </span>
+                        </a>
+                        <a href="#" class="stories-button-link">
+                            <span class="stories-btn-text">
+                                Settings
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <a class="story-item-add">
+                    <div class="story-image">+</div>
+                    <div class="story-item-text">
+                        <span class="story-title">
+                            Add to your story
+                        </span>
+                        <span class="story-text">
+                            Share a photo or video or write something
+                        </span>
+                    </div>
+                </a>
+                <a href="#" class="story-item">
+                    <img class="user-avatar" src="./images/concuria.png" alt="avatar">
+                    <div class="story-item-text">
+                        <span class="story-title">
+                            Concuria
+                        </span>
+                        <span class="story-text">
+                            4 hours ago
+                        </span>
+                    </div>
+                </a>
+                <a href="#" class="story-item">
+                    <img class="user-avatar" src="./images/figma.png" alt="avatar">
+                    <div class="story-item-text">
+                        <span class="story-title">
+                            Figma
+                        </span>
+                        <span class="story-text">
+                            7 hours ago
+                        </span>
+                    </div>
+                </a>
+                <a href="#" class="story-item">
+                    <img class="user-avatar" src="./images/design.png" alt="avatar">
+                    <div class="story-item-text">
+                        <span class="story-title">
+                            Ant Design
+                        </span>
+                        <span class="story-text">
+                            14 hours ago
+                        </span>
+                    </div>
+                </a>
+                <a href="#" class="see-more">
+                    See more...
+                </a>
+            </div>
+            <div class="stories story-gift">
+                <a class="story-item-add">
+                    <svg class="icon">
+                        <use xlink:href="./images/icons-sprite.svg#gift"></use>
+                    </svg>
+                    <div class="story-item-text">
+                        <span class="story-title">
+                            John Doe
+                        </span>
+                        <span class="story-text">
+                            ’s birthday is today
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="stories your-page">
+                <div class="stories-header">
+                    <h4 class="stories-title">
+                        Your page
+                    </h4>
+                    <button class="tag btn-dots">
+                        <span class="dots-box"></span>
+                    </button>
+                </div>
+                <a href="#" class="story-item your-page-item">
+                    <img class="user-avatar" src="./images/concuria.png" alt="avatar">
+                    <div class="story-item-text">
+                        <span class="story-title">
+                            Concuria
+                        </span>
+                        <span class="story-text">
+                            <svg class="icon">
+                                <use xlink:href="./images/icons-sprite.svg#chat"></use>
+                            </svg>
+                            Messages
+                        </span>
+                        <span class="story-text">
+                            <svg class="icon">
+                                <use xlink:href="./images/icons-sprite.svg#bell"></use>
+                            </svg>
+                            Notifications
+                        </span>
+                    </div>
+                </a>
+                <div class="your-page-btns">
+                    <button class="post-btn">
+                        <span class="post-footer-text active-btn">
+                            Likes
+                        </span>
+                    </button>
+                    <button class="post-btn">
+                        <span class="post-footer-text">
+                            Views
+                        </span>
+                    </button>
+                    <button class="post-btn">
+                        <span class="post-footer-text">
+                            Posts
+                        </span>
+                    </button>
+                </div>
+                <div class="your-page-stats">
+                    <span class="total-counter">
+                        262
+                    </span>
+                    <span class="week-counter">
+                        5 likes this week
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+<script src="./js/app.js"></script>
 </html>
