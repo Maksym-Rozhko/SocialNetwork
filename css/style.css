@@ -294,6 +294,7 @@ body {
 .dots-box {
     border: 1px solid #595959;
     border-radius: 50%;
+    margin-left: 1px;
 }
 
 .btn-dots::before,
@@ -306,4 +307,126 @@ body {
 
 .btn-dots::after {
     left: 1px;
+}
+
+.nav-link .btn-dots {
+    height: inherit;
+}
+
+.post {
+    background: #fff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin: 16px 0;
+    padding: 16px;
+}
+
+.post-header {
+    margin-bottom: 16px;
+}
+
+.post .user-avatar {
+    width: 48px;
+    height: 48px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-left: 12px;
+}
+
+.post-author {
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #0050b3;
+    font-weight: 600;
+}
+
+.post .btn-dots {
+    background-color: transparent;
+}
+
+.post-time {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8c8c8c;
+}
+
+.post-time::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #bfbfbf;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.post-text {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #595959;
+    margin-bottom: 16px;
+}
+
+.post-text a {
+    text-decoration: none;
+    color: #096dd9;
+}
+
+.post-image {
+    border-radius: 4px;
+    border: 1px solid #bfbfbf;
+}
+
+.likes {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    display: flex;
+    align-items: center;    
+}
+
+.like-counter,
+.post-footer-text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
+    margin-left: 4px;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.post-btn {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.post-btn .icon {
+    fill: #595959;
+}
+
+.post-footer::before {
+    content: "";
+    width: 100%;
+    border-top: 1px solid #e8e8e8;
+    margin-bottom: 16px;
 }
